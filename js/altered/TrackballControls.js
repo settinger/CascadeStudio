@@ -531,7 +531,7 @@
 				} else if ( state === STATE.ZOOM && ! scope.noZoom ) {
 
 					_zoomEnd.copy( getMouseOnScreen( event.pageX, event.pageY ) );
-					scope.update();
+					scope.update(); // THIS DOESN'T WORK??
 
 				} else if ( state === STATE.PAN && ! scope.noPan ) {
 

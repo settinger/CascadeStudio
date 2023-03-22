@@ -53,7 +53,8 @@ var Environment = function (goldenContainer) {
 
     // Set up the orbit controls used for Cascade Studio
     //this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-    this.controls = new THREE.TrackballControls(this.camera, this.renderer.domElement);
+    //this.controls = new THREE.TrackballControls(this.camera, this.renderer.domElement);
+    this.controls = new THREE.ArcballControls(this.camera, this.renderer.domElement);
     this.controls.target.set(0, 45, 0);
     this.controls.panSpeed  = 2;
     this.controls.zoomSpeed = 1;
